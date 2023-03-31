@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import React from 'react'
+ import { HomeContextProvider } from '../context/Home';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+  return (
+    <HomeContextProvider>
+      <Component {...pageProps} />
+    </HomeContextProvider>
+  );
 }
+
+export default MyApp
