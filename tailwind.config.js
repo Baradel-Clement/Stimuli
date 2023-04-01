@@ -1,12 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/*.{js,jsx,ts,tsx}", "./components/*.{ts,tsx}"],
+  content: ["./pages/*.{js,jsx,ts,tsx}", "./components/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        black: '#0B0D17',
+        black: '#000000',
         white: '#FFFFFF',
-        purple: '#D0D6F9',
+        blue: '#0000FF',
+        green: '#00FFCC',
+        salmon: '#F0827E',
+        darkGrey: '#B9B3B3',
+        grey: '#00000029',
+        lightGrey: '#F2EBEB',
+        darkBlue: '#000099',
+        blueRose: '#283378',
       },
       fontFamily: {
         sans: ['Raleway', 'sans-serif'],
@@ -36,18 +43,7 @@ module.exports = {
         XL: '4.75px',
       },
       backgroundImage: {
-        'background-home-desktop': "url('../public/assets/home/background-home-desktop.jpg')",
-        'background-home-tablet': "url('../public/assets/home/background-home-tablet.jpg')",
-        'background-home-mobile': "url('../public/assets/home/background-home-mobile.jpg')",
-        'background-destination-desktop': "url('../public/assets/destination/background-destination-desktop.jpg')",
-        'background-destination-tablet': "url('../public/assets/destination/background-destination-tablet.jpg')",
-        'background-destination-mobile': "url('../public/assets/destination/background-destination-mobile.jpg')",
-        'background-crew-desktop': "url('../public/assets/crew/background-crew-desktop.jpg')",
-        'background-crew-tablet': "url('../public/assets/crew/background-crew-tablet.jpg')",
-        'background-crew-mobile': "url('../public/assets/crew/background-crew-mobile.jpg')",
-        'background-technology-desktop': "url('../public/assets/technology/background-technology-desktop.jpg')",
-        'background-technology-tablet': "url('../public/assets/technology/background-technology-tablet.jpg')",
-        'background-technology-mobile': "url('../public/assets/technology/background-technology-mobile.jpg')",
+        /* 'background-home-desktop': "url('../public/assets/home/background-home-desktop.jpg')", */
       }
     },
   },
