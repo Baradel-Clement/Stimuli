@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "Amsterdam";
-  src: url("../public/fonts/Amsterdam.otf");
+  src: url("/fonts/Amsterdam.otf");
 }
 
 @font-face {
   font-family: "Gagalin";
-  src: url("../public/fonts/Gagalin.otf");
+  src: url("/fonts/Gagalin.otf");
 }
 
 @layer utilities {
