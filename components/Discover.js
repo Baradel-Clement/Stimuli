@@ -12,7 +12,7 @@ const Discover = () => {
     <section className='Discover px-[48px] py-[18px] md:px-[0px] md:py-[104px] bg-[#0000ff09] mt-[36px] md:mt-[45px] flex items-center flex-col relative overflow-hidden'>
       <h2 className='font-medium bg-darkBlue rounded-full h-[23px] md:h-[65px] flex items-center justify-center text-[12px] md:text-[35px] w-[294px] md:w-[1050px] relative z-10'>Découvre les <b className='font-extrabold mx-1'>packs Stim’Brevet</b> et profite de</h2>
       <div className='flex mt-[23px] md:mt-[82px] w-[294px] md:w-[1050px] relative z-10'>
-        <Image src={fusee} alt='horloge icon' className='w-[14px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
+        <Image src={fusee} alt='horloge icon' className='max-w-[14px] max-h-[18px] md:max-w-[40px] md:max-h-none mr-[12px] md:mr-[30px]' />
         <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'>Contenus qui te permettent de <b className='font-extrabold text-darkBlue'>réviser</b> et de <b className='font-extrabold text-darkBlue'>t’exercer par ta passion</b></p>
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
