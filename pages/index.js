@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import Header from '../components/Header';
 import Tips from '../components/Tips';
 import Discover from '../components/Discover';
+import Benefits from '../components/Benefits';
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Tips />
       <Discover />
+      <Benefits />
     </>
   )
 }
