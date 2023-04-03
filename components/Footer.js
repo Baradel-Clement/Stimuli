@@ -8,7 +8,8 @@ import tiktok from '../public/assets/tiktok.svg';
 
 const Footer = () => {
   return (
-    <footer className='w-full h-[51px] md:h-[125px] bg-blue flex justify-end items-center px-[7%]'>
+    <footer className='w-full h-[51px] md:h-[125px] bg-blue flex justify-between items-center px-[7%]'>
+      <a className='text-[10px] md:text-[15px] underline' href='https://stimuli.education/politique-de-confidentialite/' target='_blank'>Mentions légales</a>
       <div className='w-[106px] md:w-[181px] flex justify-between items-center'>
         <a className='w-[17.28px] h-[17.28px] md:w-[30px] md:h-[30px] rounded-full' href='https://www.facebook.com/people/Stimulieducation/100083303734195/' target='_blank'>
           <Image src={facebook} alt='facebook' className='w-full rounded-full' />
