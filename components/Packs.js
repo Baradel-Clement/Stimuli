@@ -100,8 +100,8 @@ const Packs = () => {
       </section>
       {/* Desktop */}
       {/* Desktop */}
-      <section className='Packs max-md:hidden w-[990px] mx-auto flex justify-between mt-[42px] mb-[65px]'>
-        <div className='flex flex-col items-center w-[324px]'>
+      <section className='Packs max-md:hidden w-[1225px] mx-auto flex justify-between mt-[42px] mb-[65px]'>
+        <div className='flex flex-col items-center w-[400px]'>
           <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <Image src={pack1} alt='pack integrale' className='w-full' />
           </a>
@@ -137,7 +137,7 @@ const Packs = () => {
             <button type='button' className='w-[194px] h-[40px] flex items-center justify-center text-salmon text-[15px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
-        <div className='flex flex-col items-center w-[324px]'>
+        <div className='flex flex-col items-center w-[400px]'>
           <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <Image src={pack2} alt='pack integrale' className='w-full' />
           </a>
@@ -173,7 +173,7 @@ const Packs = () => {
             <button type='button' className='w-[194px] h-[40px] flex items-center justify-center text-salmon text-[15px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
-        <div className='flex flex-col items-center w-[324px]'>
+        <div className='flex flex-col items-center w-[400px]'>
           <a href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <Image src={pack3} alt='pack integrale' className='w-full' />
           </a>

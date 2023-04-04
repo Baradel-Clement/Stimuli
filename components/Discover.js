@@ -17,7 +17,7 @@ const Discover = () => {
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
         <Image src={tchat} alt='horloge icon' className='w-[16px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
-        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Aide instantanée</b> par tchat en accès <b className='font-extrabold text-darkBlue'>illimité</b></p>
+        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Programme de révisions personalisé</b></p>
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
         <Image src={certification} alt='horloge icon' className='w-[14px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
@@ -25,7 +25,7 @@ const Discover = () => {
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
         <Image src={calendrier2} alt='horloge icon' className='w-[16px] h-[14px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
-        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Programme de révision personnalisé</b> sur mesure</p>
+        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Aide instantanée</b> par tchat en accès <b className='font-extrabold text-darkBlue'>illimité avec des profs disponibles</b> entre 17h et 20h en semaine, et de 14h à 20h le mercredi et les week-ends</p>
       </div>
 
       <Image src={smile} alt='smile icon' className='absolute left-[-32px] top-[77px] md:left-[-118px] md:top-[168px] w-[75px] h-[75px] md:w-[263px] md:h-[263px] z-0' />
