@@ -47,12 +47,12 @@ const Packs = () => {
               <p className='text-[10px] font-semibold text-blueRose'>Physique Chimie</p>
             </div>
           </div>
-          <a className='mt-[35px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'button'})} >
+          <a className='mt-[35px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} >
             <button type='button' className='w-[114px] h-[25px] flex items-center justify-center text-salmon text-[11px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
         <div className='flex flex-col items-center w-full mb-[56px]'>
-          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' target='_blank' onClick={() => fbq('trackCustom', 'purchaseScientifique', {trigger: 'image'})} >
+          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' target='_blank' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} >
             <Image src={pack2} alt='pack scientifique' className='w-full' />
           </a>
           <p className='text-blueRose text-[10px] font-extrabold mt-[22px] mb-[18px]'>MATIÈRES COMPRISES DANS CE PACK :</p>
@@ -70,12 +70,12 @@ const Packs = () => {
               <p className='text-[10px] font-semibold text-blueRose'>Physique Chimie</p>
             </div>
           </div>
-          <a className='mt-[35px]' href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseScientifique', {trigger: 'image'})}  target='_blank'>
+          <a className='mt-[35px]' href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})}  target='_blank'>
             <button type='button' className='w-[114px] h-[25px] flex items-center justify-center text-salmon text-[11px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
         <div className='flex flex-col items-center w-full mb-[56px]'>
-          <a href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseLitteraire', {trigger: 'image'})}  target='_blank'>
+          <a href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})}  target='_blank'>
             <Image src={pack3} alt='pack litteraires' className='w-full' />
           </a>
           <p className='text-blueRose text-[10px] font-extrabold mt-[22px] mb-[18px]'>MATIÈRES COMPRISES DANS CE PACK :</p>
@@ -93,7 +93,7 @@ const Packs = () => {
               <p className='text-[10px] font-semibold text-blueRose'>Enseignement Moral et Civique</p>
             </div>
           </div>
-          <a className='mt-[35px]' href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseLitteraire', {trigger: 'image'})} target='_blank'>
+          <a className='mt-[35px]' href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <button type='button' className='w-[114px] h-[25px] flex items-center justify-center text-salmon text-[11px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
@@ -133,12 +133,12 @@ const Packs = () => {
               <p className='text-[15px] font-semibold text-blueRose'>Physique Chimie</p>
             </div>
           </div>
-          <a className='mt-[50px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'button'})} target='_blank'>
+          <a className='mt-[50px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <button type='button' className='w-[194px] h-[40px] flex items-center justify-center text-salmon text-[15px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
         <div className='flex flex-col items-center w-[324px]'>
-          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseScientifique', {trigger: 'image'})} target='_blank'>
+          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <Image src={pack2} alt='pack integrale' className='w-full' />
           </a>
           <PacksBenefitsDesktop />
@@ -169,12 +169,12 @@ const Packs = () => {
               <p className='text-[15px] font-semibold text-blueRose'>Physique Chimie</p>
             </div>
           </div>
-          <a className='mt-[50px]' href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseScientifique', {trigger: 'button'})} target='_blank'>
+          <a className='mt-[50px]' href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <button type='button' className='w-[194px] h-[40px] flex items-center justify-center text-salmon text-[15px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
         <div className='flex flex-col items-center w-[324px]'>
-          <a href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseLitteraire', {trigger: 'image'})} target='_blank'>
+          <a href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <Image src={pack3} alt='pack integrale' className='w-full' />
           </a>
           <PacksBenefitsDesktop />
@@ -205,7 +205,7 @@ const Packs = () => {
               <p className='text-[15px] font-semibold text-blueRose'><s className='text-blueRose'>Physique Chimie</s></p>
             </div>
           </div>
-          <a className='mt-[50px]' href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseLitteraire', {trigger: 'button'})} target='_blank'>
+          <a className='mt-[50px]' href='https://buy.stripe.com/28ofZ45go6SY15S7st' onClick={() => fbq('trackCustom', 'purchaseIntegrale', {trigger: 'image'})} target='_blank'>
             <button type='button' className='w-[194px] h-[40px] flex items-center justify-center text-salmon text-[15px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
