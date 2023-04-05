@@ -16,15 +16,15 @@ const Discover = () => {
         <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'>Contenus qui te permettent de <b className='font-extrabold text-darkBlue'>réviser</b> et de <b className='font-extrabold text-darkBlue'>t’exercer grâce à l’un de nos 5 thèmes de passions</b> : manga, musique, jeux vidéos, sport et séries & films</p>
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
-        <Image src={tchat} alt='horloge icon' className='w-[16px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
-        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Programme de révisions personalisé</b></p>
+        <Image src={calendrier2} alt='horloge icon' className='w-[16px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
+        <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Programme de révisions personnalisé</b></p>
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
         <Image src={certification} alt='horloge icon' className='w-[14px] h-[18px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
         <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'>Coaching par un <b className='font-extrabold text-darkBlue'>prof certifié</b></p>
       </div>
       <div className='flex mt-[23px] md:mt-[67px] w-[294px] md:w-[1050px] relative z-10'>
-        <Image src={calendrier2} alt='horloge icon' className='w-[16px] h-[14px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
+        <Image src={tchat} alt='horloge icon' className='w-[16px] h-[14px] md:w-[40px] md:h-[40px] mr-[12px] md:mr-[30px]' />
         <p className='text-[12px] md:text-[28px] font-medium text-darkBlue w-[253px] md:w-[1000px]'><b className='font-extrabold text-darkBlue'>Aide instantanée</b> par tchat en accès <b className='font-extrabold text-darkBlue'>illimité avec des profs disponibles</b> entre 17h et 20h en semaine, et de 14h à 20h le mercredi et les week-ends</p>
       </div>
 
