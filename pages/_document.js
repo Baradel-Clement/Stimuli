@@ -15,13 +15,31 @@ export default function Document() {
           />
         </noscript>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NYCEK1BE4C"></Script>
-        <Script id="gtag" strategy="lazyOnload">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <Script
+          id='gtag'
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
 
-          gtag('config', 'G-NYCEK1BE4C');`}
-        </Script>
+                    gtag('config', 'G-NYCEK1BE4C');`,
+          }}
+        />
+        <Script
+          id='axeptio'
+          dangerouslySetInnerHTML={{
+            __html: `window.axeptioSettings = {
+            clientId: "642d95c073a92ef0f78ed99d",
+            cookiesVersion: "stimuli-education-landingpage-brevet-fr-2",
+          };
+          
+          (function(d,s) {
+          var t = d.getElementsByTagName(s)[0],e = d.createElement(s);
+          e.async = true; e.src = "//static.axet.io/sdk-slim.js";
+          t.parentNode.insertBefore(e, t);
+          })(document, "script");`,
+          }}
+        />
         <meta name="facebook-domain-verification" content="3ay8z2rd2fnio46n8ltvwko1hv0f8w" />
       </Head>
       <body>
