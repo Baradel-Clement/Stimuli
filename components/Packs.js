@@ -17,7 +17,7 @@ const Packs = () => {
       {/* Mobile */}
       <section className='Packs flex flex-col w-[285px] m-auto mt-[30px] md:hidden'>
         <div className='flex flex-col items-center w-full mb-[56px]'>
-          <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => window.fbq('trackCustom', 'Pack intégrale image')}>
+          <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => fbq('trackCustom', 'Pack intégrale image')}>
             <Image src={pack1} alt='pack integrale' className='w-full' />
           </a>
           <p className='text-blueRose text-[10px] font-extrabold mt-[22px] mb-[18px]'>MATIÈRES COMPRISES DANS CE PACK :</p>
@@ -52,7 +52,7 @@ const Packs = () => {
           </a>
         </div>
         <div className='flex flex-col items-center w-full mb-[56px]'>
-          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' target='_blank' onClick={() => window.fbq('trackCustom', 'Pack scientifique image')}>
+          <a href='https://buy.stripe.com/fZeeV038ga5ag0MfYY' target='_blank' onClick={() => fbq('trackCustom', 'Pack scientifique image')}>
             <Image src={pack2} alt='pack scientifique' className='w-full' />
           </a>
           <p className='text-blueRose text-[10px] font-extrabold mt-[22px] mb-[18px]'>MATIÈRES COMPRISES DANS CE PACK :</p>
@@ -100,7 +100,7 @@ const Packs = () => {
       </section>
       {/* Desktop */}
       {/* Desktop */}
-      <section className='Packs max-md:hidden w-[1225px ] mx-auto flex justify-between mt-[42px] mb-[65px]'>
+      <section className='Packs max-md:hidden w-[1225px] mx-auto flex justify-between mt-[42px] mb-[65px]'>
         <div className='flex flex-col items-center w-[400px]'>
           <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' onClick={() => window.fbq('trackCustom', 'Pack intégrale image')} target='_blank'>
             <Image src={pack1} alt='pack integrale' className='w-full' />
