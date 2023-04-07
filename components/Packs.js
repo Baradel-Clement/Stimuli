@@ -47,7 +47,7 @@ const Packs = () => {
               <p className='text-[10px] font-semibold text-blueRose'>Physique Chimie</p>
             </div>
           </div>
-          <a className='mt-[35px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => window.fbq('trackCustom', 'Pack intégrale boutton')}>
+          <a className='mt-[35px]' href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => fbq.event('Purchase', {name: 'Pack intégrale boutton', value: 60.00}) }>
             <button type='button' className='w-[114px] h-[25px] flex items-center justify-center text-salmon text-[11px] font-black bg-lightGrey rounded-full'>Je choisis</button>
           </a>
         </div>
