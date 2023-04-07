@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { FB_PIXEL_ID } from '../lib/fpixel'
 import Script from 'next/script'
+import * as fbq from '../lib/fpixel'
 
 export default function Document() {
   return (
