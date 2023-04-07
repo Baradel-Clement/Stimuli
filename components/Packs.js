@@ -17,7 +17,7 @@ const Packs = () => {
       {/* Mobile */}
       <section className='Packs flex flex-col w-[285px] m-auto mt-[30px] md:hidden'>
         <div className='flex flex-col items-center w-full mb-[56px]'>
-          <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => fbq.packIntegraleImage('trackCustom', 'Pack intégrale image')}>
+          <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => window.fbq('trackCustom', 'Pack intégrale image')}>
             <Image src={pack1} alt='pack integrale' className='w-full' />
           </a>
           <p className='text-blueRose text-[10px] font-extrabold mt-[22px] mb-[18px]'>MATIÈRES COMPRISES DANS CE PACK :</p>
