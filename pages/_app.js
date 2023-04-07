@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
-  
+
   return (
     <>
       {/* Global Site Code Pixel - Facebook Pixel */}
@@ -44,6 +44,21 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           `,
         }}
       />
+
+      <Script id="gtag" strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2">
+        {`
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-178879339-2');
+        </script>
+          `}
+      </Script>
+
       <HomeContextProvider>
         <Component {...pageProps} />
       </HomeContextProvider>
