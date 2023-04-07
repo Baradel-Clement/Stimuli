@@ -45,18 +45,20 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         }}
       />
 
-      <Script id="gtag" strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2">
-        {`
+      <Script
+        strategy='afterInteractive'
+        src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2"
+      />
+
+      <Script id="gtag" strategy='afterInteractive' dangerouslySetInnerHTML={{
+        __html: `
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2"></script>
-        <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'UA-178879339-2');
-        </script>
-          `}
+          `}}>
       </Script>
 
       <HomeContextProvider>
