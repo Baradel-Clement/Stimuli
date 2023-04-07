@@ -19,6 +19,21 @@ export default function Home() {
       <Benefits />
       <Packs />
       <Footer />
+      <Script
+          id='axeptio'
+          dangerouslySetInnerHTML={{
+            __html: `window.axeptioSettings = {
+            clientId: "642d95c073a92ef0f78ed99d",
+            cookiesVersion: "stimuli-education-landingpage-brevet-fr-2",
+          };
+          
+          (function(d,s) {
+          var t = d.getElementsByTagName(s)[0],e = d.createElement(s);
+          e.async = true; e.src = "//static.axet.io/sdk-slim.js";
+          t.parentNode.insertBefore(e, t);
+          })(document, "script");`,
+          }}
+        />
     </>
   )
 }
