@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { FB_PIXEL_ID } from '../lib/fpixel'
 import Script from 'next/script'
 
 export default function Document() {
@@ -11,7 +10,7 @@ export default function Document() {
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+            src={`https://www.facebook.com/tr?id=141824108837272&ev=PageView&noscript=1`}
           />
         </noscript>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NYCEK1BE4C"></Script>
