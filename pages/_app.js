@@ -56,9 +56,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           u.parentNode.insertBefore(r,u);})(window,document,
           'https://sc-static.net/scevent.min.js');
 
-          snaptr('init', '620b2eb2-e3a2-4001-a7f6-4061c2470a8c', {
-'user_email': '__INSERT_USER_EMAIL__'
-});
+          snaptr('init', 'bf3ecfbb-34f3-485b-898a-184a15dade5e', {
+          'user_email': '__INSERT_USER_EMAIL__'
+          });
 
           snaptr('track', 'PAGE_VIEW');
           `,
