@@ -45,6 +45,10 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         }}
       />
       <Script
+        strategy='afterInteractive'
+        src="https://sc-static.net/scevent.min.js"
+      />
+      <Script
         id="snap-pixel"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
