@@ -12,7 +12,7 @@ const Header = () => {
       <header className='flex justify-center items-end w-full bg-blue h-[137px] md:h-[377px] relative'>
         <div className='flex flex-col md:flex-row absolute justify-between items-center h-[40px] top-[18px] left-[14px] md:top-[39px] md:left-[53px]'>
           <a href='https://stimuli.education/' className='md:mr-[55px]'>
-            <div className='flex justify-between items-center w-[15px] md:w-[150px]'>
+            <div className='flex justify-between items-center w-[15px] md:w-[259px]'>
               <Image src={webIcon} alt='web icon' className='w-[15px] h-[15px] md:w-[25px] md:h-[25px]' />
               <p className='hidden md:block text-[25px]'>Découvrir stimuli</p>
             </div>
