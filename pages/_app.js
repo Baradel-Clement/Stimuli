@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { HomeContextProvider } from '../context/Home';
 import Script from 'next/script'
 import { useRouter } from 'next/router'
-import * as fbq from '../lib/fpixel'
+import * as fbq from '../lib/segment-analytics'
 
 import '../styles/globals.css'
 
@@ -10,8 +10,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter()
 
   useEffect(() => {
-    // This pageview only triggers the first time (it's important for Pixel to have real information)
-    fbq.pageview()
+    // fbq.pageview() => already in script
 
     const handleRouteChange = () => {
       fbq.pageview()
@@ -25,41 +24,89 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   return (
     <>
-      {/* Global Site Code Pixel - Facebook Pixel */}
-      <Script
-        id="fb-pixel"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 141824108837272);
-            fbq('track', 'PageView');
-          `,
+        <Script
+            id="axeptio"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+            window.axeptioSettings = {
+            clientId: '633c221bd9bc6d8ba5813f08',
+            cookiesVersion: 'app stimuli education-fr-2',
+        };
+
+            (function (d, s) {
+            var t = d.getElementsByTagName(s)[0],
+            e = d.createElement(s);
+            e.async = true;
+            e.src = '//static.axept.io/sdk.js';
+            t.parentNode.insertBefore(e, t);
+        })(document, 'script');`,
         }}
       />
-
       <Script
-        strategy='afterInteractive'
-        src="https://www.googletagmanager.com/gtag/js?id=UA-178879339-2"
+            id="segment-track"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+            !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize) {
+            if (analytics.invoked) {
+            window.console && console.error && console.error('Segment snippet included twice.');
+        } else {
+            analytics.invoked = !0;
+            analytics.methods = ['trackSubmit', 'trackClick', 'trackLink', 'trackForm', 'pageview', 'identify', 'reset', 'group', 'track', 'ready', 'alias', 'debug', 'page', 'once', 'off', 'on', 'addSourceMiddleware', 'addIntegrationMiddleware', 'setAnonymousId', 'addDestinationMiddleware'];
+            analytics.factory = function (e) {
+            return function () {
+            var t = Array.prototype.slice.call(arguments);
+            t.unshift(e);
+            analytics.push(t);
+            return analytics;
+        };
+        };
+            for (var e = 0; e < analytics.methods.length; e++) {
+            var key = analytics.methods[e];
+            analytics[key] = analytics.factory(key);
+        }
+            analytics.load = function (key, e) {
+            var t = document.createElement('script');
+            t.type = 'text/javascript';
+            t.async = !0;
+            t.src = 'https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';
+            var n = document.getElementsByTagName('script')[0];
+            n.parentNode.insertBefore(t, n);
+            analytics._loadOptions = e;
+        };
+            analytics._writeKey = 'v4IBe2auYPLPpS9cq4RMlcwd2S1DXeCM';
+            analytics.SNIPPET_VERSION = '4.15.3';
+            window._axcb = window._axcb || [];
+            window._axcb.push(function (sdk) {
+            sdk.on('cookies:complete', function (choices) {
+            analytics.load('v4IBe2auYPLPpS9cq4RMlcwd2S1DXeCM'/*,
+              {
+                integrations: {
+                  All: false,
+                  'Google Analytics': choices.google_analytics,
+                  'Segment.io': choices.segment,
+                  'Facebook Pixel': choices.facebook_pixel,
+                  'Google Ads': choices.Google_Ads,
+                  'Fullstory': choices.Fullstory,
+                  'Mixpanel': choices.Mixpanel,
+                  'TikTok': choices.TikTok,
+                  'SendinBlue': choices.SendinBlue,
+                  'Snap Pixel': choices.Snap_Pixel
+                }
+              }*/);
+            // You'll have to complete with your various cookies, following the structure 'Google Analytics': choices.google_analytics,
+            // generally : 'Name of vendor in segment': choices.nameOfCookieInAxeptio
+        });
+        });
+            analytics.page();
+        }
+        }
+        }()`,
+        }}
       />
-
-      <Script id="gtag" strategy='afterInteractive' dangerouslySetInnerHTML={{
-        __html: `
-        <!-- Google tag (gtag.js) -->
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-178879339-2');
-          `}}>
-      </Script>
 
       <HomeContextProvider>
         <Component {...pageProps} />
