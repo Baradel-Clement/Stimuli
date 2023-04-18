@@ -7,10 +7,31 @@ import Discover from '../components/Discover';
 import Benefits from '../components/Benefits';
 import Packs from '../components/Packs';
 import Footer from '../components/Footer';
+import Popup from '../components/Popup';
 import Script from 'next/script';
+import { useEffect, useState } from 'react';
 
 
 export default function Home() {
+  const [popupReady, setPopupReady] = useState(false);
+  const [previousScroll, setPreviousScroll] = useState(0);
+  const [displayPopup, setDisplayPopup] = useState(false);
+  const [lockPopup, setLockPopup] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (lockPopup === false) {
+        if (popupReady && previousScroll > window.scrollY && lockPopup === false) {
+          setDisplayPopup(true);
+        }
+        if ((window.innerWidth <= 767 && window.scrollY >= 300) || (window.innerWidth > 767 && window.scrollY >= 655)) {
+          if (popupReady === false) {
+            setPopupReady(true)
+          }
+          setPreviousScroll(window.scrollY)
+        }
+      }
+    })
+  }, [popupReady, previousScroll, lockPopup])
   return (
     <>
       <Header />
@@ -19,10 +40,13 @@ export default function Home() {
       <Benefits />
       <Packs />
       <Footer />
+      {
+        displayPopup && lockPopup === false && <Popup setDisplayPopup={setDisplayPopup} setLockPopup={setLockPopup} />
+      }
       <Script
-          id='axeptio'
-          dangerouslySetInnerHTML={{
-            __html: `window.axeptioSettings = {
+        id='axeptio'
+        dangerouslySetInnerHTML={{
+          __html: `window.axeptioSettings = {
             clientId: "642d95c073a92ef0f78ed99d",
             cookiesVersion: "stimuli-education-landingpage-brevet-fr-2",
           };
@@ -32,8 +56,8 @@ export default function Home() {
           e.async = true; e.src = "https://static.axept.io/sdk.js";
           t.parentNode.insertBefore(e, t);
           })(document, "script");`,
-          }}
-        />
+        }}
+      />
     </>
   )
 }

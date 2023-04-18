@@ -8,7 +8,7 @@ import crayon from '../public/assets/crayon.png';
 
 const Header = () => {
   return (
-    <section className='Home'>
+    <section id='Home' className='Home'>
       <header className='flex justify-center items-end w-full bg-blue h-[137px] md:h-[377px] relative'>
         <div className='flex flex-col md:flex-row absolute justify-between items-center h-[40px] top-[18px] left-[14px] md:top-[39px] md:left-[53px]'>
           <a href='https://stimuli.education/' className='md:mr-[55px]'>
