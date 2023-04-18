@@ -4,6 +4,7 @@ import popupImg from '../public/assets/popup.jpg'
 import * as analytics from '../lib/segment-analytics'
 
 const Popup = ({ setDisplayPopup, setLockPopup }) => {
+  console.log('isDeployed');
   return (
     <>
       <div className='w-[100vw] h-[100vh] fixed z-20 top-0 bg-[#0000007a]' onClick={() => {
