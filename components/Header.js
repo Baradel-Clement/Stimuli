@@ -12,15 +12,15 @@ const Header = () => {
       <header className='flex justify-center items-end w-full bg-blue h-[137px] md:h-[377px] relative'>
         <div className='flex flex-col md:flex-row absolute justify-between items-center h-[40px] top-[18px] left-[14px] md:top-[39px] md:left-[53px]'>
           <a href='https://stimuli.education/' className='md:mr-[55px]'>
-            <div className='flex justify-between items-center w-[15px] md:w-[140px]'>
+            <div className='flex justify-between items-center w-[15px] md:w-[150px]'>
               <Image src={webIcon} alt='web icon' className='w-[15px] h-[15px] md:w-[25px] md:h-[25px]' />
-              <p className='hidden md:block text-[25px]'>site web</p>
+              <p className='hidden md:block text-[25px]'>Découvrir stimuli</p>
             </div>
           </a>
           <a href='tel:0689676602'>
             <div className='flex items-center justify-center md:justify-between w-[15px] h-[15px] md:w-[265px] md:h-[48px] bg-green rounded-full md:pl-[25px] md:pr-[27px]'>
               <Image src={telIcon} alt='tel Icon' className='w-[8.21px] h-[8.21px] md:w-[25px] md:h-[25px]' />
-              <p className='hidden md:block text-[25px] text-blue'>06 89 67 66 02</p>
+              <p className='hidden md:block text-[25px] text-blue'>0 805 03 55 00</p>
             </div>
           </a>
         </div>
