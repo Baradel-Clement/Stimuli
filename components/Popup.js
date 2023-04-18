@@ -15,7 +15,7 @@ const Popup = ({ setDisplayPopup, setLockPopup }) => {
         <p className='italic text-[12px] my-3'>Prenez dès maintenant un rendez-vous téléphonique<br />avec un membre de notre équipe</p>
         <button className='bg-salmon px-4 py-2 rounded-xl font-extrabold tracking-M mb-4'>PRENDRE RENDEZ-VOUS</button>
       </div> */}
-      <div className='w-[80%] max-w-[800px] fixed top-[50%] left-[50%] z-30 -translate-x-1/2 -translate-y-1/2'>
+      <div className='w-[80%] max-w-[600px] fixed top-[50%] left-[50%] z-30 -translate-x-1/2 -translate-y-1/2'>
         <a href='https://rebrand.ly/popupstimuli' target='_blank'><Image src={popupImg} className='w-full' alt='popup rendez vous' priority /></a>
         <button className=' bg-transparent absolute top-0 right-0 w-[50px] h-[50px]' onClick={() => {
           setDisplayPopup(false)
