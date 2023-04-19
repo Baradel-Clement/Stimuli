@@ -5,12 +5,14 @@ import { useRouter } from 'next/router'
 import * as fbq from '../lib/segment-analytics'
 
 import '../styles/globals.css'
+import {event} from "../lib/segment-analytics";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter()
 
   useEffect(() => {
     // fbq.pageview() => already in script
+    fbq.event('LandingPackBrevet');
 
     const handleRouteChange = () => {
       fbq.pageview()
