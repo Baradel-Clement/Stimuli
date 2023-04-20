@@ -17,7 +17,7 @@ const Packs = () => {
     <>
       {/* Mobile */}
       {/* Mobile */}
-      <section className='Packs flex flex-col w-[285px] m-auto mt-[30px] md:hidden'>
+      <section className='Packs flex flex-col w-[285px] m-auto mt-[179px] md:hidden'>
         <div className='flex flex-col items-center w-full mb-[56px]'>
           <a href='https://buy.stripe.com/6oE4gm7owgty7ug28a' target='_blank' onClick={() => {
             analytics.event('Purchase', { name: 'Pack intégrale image', value: 60.00 })
